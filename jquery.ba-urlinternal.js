@@ -449,7 +449,7 @@
       : '';
     
     var re = new RegExp( '^' + alt_hostname + '(.*)', 'i' ),
-      pattern = '^(?:' + loc.protocol + ')?//'
+      pattern = '^(?:https?:)?//'
         + loc.hostname.replace(re, alt_hostname + '$1').replace( /\\?\./g, '\\.' )
         + (loc.port ? ':' + loc.port : '') + '/';
     
